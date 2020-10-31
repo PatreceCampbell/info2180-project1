@@ -67,13 +67,14 @@ header li a:hover {
     padding-top: 50px;
     width: 900px;
 }
+
 .overview-hero .container img{
     float: left; 
     width:200px;
     height:200px;
     padding-left: 30px;
     margin: 30px 50px;
- }
+}
 
 .learn-about {
     grid-row: 2;
@@ -121,18 +122,36 @@ header li a:hover {
 
 .testing {
     grid-row: 3;
+    display: inline;
+    flex-direction: row;
     background-color: #4A5568;
     color: white;
     padding: 50px;
-    margin: 20px
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.testing .container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+.cta {
+    grid-column: 2;
+    grid-row: 1;
+    align-items: center;
+    padding-top: 50px;
 }
 
 .testing-desciption{
+    grid-column: 1;
+    grid-row: 1;
     text-align: left;
+    width: 600px;
 }
 
 .testing a {
-    float: right;
     background-color: #48BB78;
     border-radius: 5px;
     padding-top: 10px;
@@ -145,7 +164,9 @@ header li a:hover {
 }
 
 .stories {
-     grid-row: 4;
+    grid-row: 4;
+    padding: 20px;
+    margin: 30px;
 }
 
 .stories h2 {
@@ -196,6 +217,10 @@ article img{
 .form-group{
     display: inline;
     justify-content: center;
+}
+
+.newsletter h3 {
+    text-align: center;
 }
 
 .newsletter input{
