@@ -50,8 +50,12 @@ header li {
 header li a{
     text-decoration: none;
     margin: 5px;
-    color: black;
+    color: #6b7280;
     font-size: 18px;
+}
+
+header li a:hover {
+    color: #5A67D8;
 }
 
 .overview-hero{
@@ -77,6 +81,7 @@ header li a{
 }
 
 .learn-about h2 {
+    font-size: 24px;
     color: #48BB78;
 } 
 
@@ -91,7 +96,10 @@ header li a{
     border-radius: 5px;
     border: 2px solid #E2E8F0;
     box-shadow: 5px 5px #E2E8F0;
-    width: 300px;
+    width: 320px;
+    height: 500px;
+    padding: 2px;
+    margin: 10px;
 }
 
 .card img{
@@ -103,16 +111,18 @@ header li a{
 }
 
 .card-body {
-    padding: 20px;
+    padding: 5px;
+    width: 280px;
 }
 
 .card-body h3{
     color: #48bb78;
+    font-size: 21px;
 }
 
 .testing {
     grid-row: 3;
-    background-color: #4a5568;
+    background-color: #4A5568;
     color: white;
     padding: 50px;
     margin: 20px
@@ -124,7 +134,7 @@ header li a{
 
 .testing a {
     float: right;
-    background-color: #48bb78;
+    background-color: #48BB78;
     border-radius: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -137,6 +147,19 @@ header li a{
 
 .stories {
      grid-row: 4;
+}
+
+.stories h2 {
+    color: #5A67D8;  
+}
+
+.stories p a {
+    color: #5A67D8;
+    text-decoration: none;
+}
+
+.stories h3 {
+    font-size: 18px;
 }
 
 article {
@@ -159,4 +182,53 @@ article img{
 
 .newsletter{
      grid-row: 5;
+     float: center;
+     background-color: #48BB78;
+     color: white;
+     padding: 50px;
  }
+
+/* .newsletter .container{
+    text-align: center;
+} */
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.newsletter input{
+    padding: 10px;
+    padding-right: 80px;
+    margin: 5px;
+    border-radius: 5px;
+    border-color: white;
+    /* width: 500px; */
+}
+
+.newsletter h3 {
+    text-align: center;
+}
+
+.newsletter p {
+    /* text-align: center; */
+    width: 500px;
+    align-items: center;
+}
+
+.newsletter button{
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #5467D8;
+    border-radius: 5px;
+    border-color: #5467D8;
+}
+
+footer {
+    background-color: #4A5568;
+    color: white;
+}
