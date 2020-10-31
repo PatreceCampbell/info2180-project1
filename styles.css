@@ -1,5 +1,4 @@
 /* Add your CSS to this file */
-
 body {
     margin: 0;
     font-size: 16px;
@@ -180,21 +179,22 @@ article img{
     padding: 30px;
 }
 
-.newsletter{
-     grid-row: 5;
-     float: center;
-     background-color: #48BB78;
-     color: white;
-     padding: 50px;
- }
-
-/* .newsletter .container{
-    text-align: center;
-} */
-
-form{
+.newsletter {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: 5;
+    background-color: #48BB78;
+    color: white;
+    padding: 50px;
+}
+
+.newsletter .container{
+    width: 500px;
+}
+
+.form-group{
+    display: inline;
     justify-content: center;
 }
 
@@ -204,18 +204,7 @@ form{
     margin: 5px;
     border-radius: 5px;
     border-color: white;
-    /* width: 500px; */
-}
-
-.newsletter h3 {
-    text-align: center;
-}
-
-.newsletter p {
-    /* text-align: center; */
-    width: 500px;
-    align-items: center;
-}
+}    
 
 .newsletter button{
     margin: 5px;
