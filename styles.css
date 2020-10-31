@@ -122,8 +122,6 @@ header li a:hover {
 
 .testing {
     grid-row: 3;
-    display: inline;
-    flex-direction: row;
     background-color: #4A5568;
     color: white;
     padding: 50px;
