@@ -8,12 +8,24 @@ window.onload = function(){
     function handlesubmission(clickEvent){
         if (response.value == ""){
             displaymessage.innerHTML = "Please enter a valid email address.";
-            console.log("Please enter a valid email address.");
+        }
+        else if (isValidEmail(response.value) == false){
+            displaymessage.innerHTML = "Please enter a valid email address.";
         }
         else{
             displaymessage.innerHTML = "Thank you! Your email address " + response.value + " has been added to our mailing list!";
-            console.log("Thank you! Your email address " + response.value + " has been added to our mailing list!");
         }
         clickEvent.preventDefault();
+    }
+
+    function isValidEmail(emailValue){
+       var emailformats = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        if (emailValue.match(emailformats)){
+           return true 
+        }   
+        else {
+           return false     
+       }
+
     }
 }
