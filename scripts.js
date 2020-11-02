@@ -26,6 +26,5 @@ window.onload = function(){
         else {
            return false     
        }
-
     }
 }
